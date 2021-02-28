@@ -4,6 +4,7 @@
 .XLSX
 .XLS
 .xls
+*.pptx
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
