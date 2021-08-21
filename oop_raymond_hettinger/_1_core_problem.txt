@@ -1,0 +1,57 @@
+The Core Problem
+================
+
+
+Data                                        Functions
+-----                                       ----------
+a = 5                                       close(x)
+b = [10,20,30]                              cross(x,y)        
+c = 6                                       dot(x,y)
+d = [5,-10,7]                               eigs(x)        
+e = [[1,2],                                 minv(m)    
+    [3,4],                                  mmul(x,y)    
+    [5,6]]                                  msize(x)    
+f = [[1,4,6]                                mul(x,y)        
+    [6,4,1],                                read(x)        
+    [3,2,3]]                                strlen(x)        
+g = 'hello'                                 write(x)    
+h = [10,-5]                                 unistrlen(x)    
+i = 'goodbye'                               uniupper(x)        
+j = open('myfile.txt')                      upper(x)                
+k = u'howdoyoudo'                           urlread(x)            
+l = urlopen('http://www.python.org')        visze(x)                                
+k = open('subfile.txt')                     write(x)                
+
+#################################################################################
+All of these(above) existed in one namespace. And one namespace is bad.
+Whenever you wanted to call a function with the data, you had to know which one. 
+12*12 = 144 possible connections between Data and Functions (above).
+Most of the programs were falling apart(breaking).
+
+#################################################################################
+Calls
+-----
+verb(noun, noun)
+mul(a,c)
+mmul(e,f)
+
+Problems
+--------
+1) Which functions go with which data
+- If you have a lots of data and lots of functions, you will break somethins.
+
+2) No organizing principle
+Partial Solution: type checking
+pow(2,5) != pow(5,2)
+but matches pow(int, int) -> int
+- your program can still be wrong and still be type correct.
+
+3) No introspection(examination of and attention to your own ideas, thoughts, and feelings)
+- what kind of object are you and we will know how to do
+
+4) Learnability problems
+
+
+
+
+

@@ -1,0 +1,53 @@
+Objects
+=======
+Objects; data was directly associated with functions that operate on the data.
+
+Data                                        Functions
+-----                                       ----------
+a = 5                                       [mul, abs]
+b = [10,20,30]                              [dot, vlen, cross]
+c = 6                                       [mul, abs]
+d = [5,-10,7]                               [dot, vlen, cross]
+e = [[1,2],                                 [msize, mul]
+    [3,4],                                  
+    [5,6]]                                  
+f = [[1,4,6]                                [msize, mul, minv, eigs]
+    [6,4,1],                                
+    [3,2,3]]                                
+g = 'hello'                                 [strlen, upper]
+h = [10,-5]                                 [dot, vlen]
+i = 'goodbye'                               [strlen, upper]
+j = open('myfile.txt')                      [read, write, close]
+k = u'howdoyoudo'                           [unistrlen, uniupper]
+l = urlopen('http://www.python.org')        [urlread]
+k = open('subfile.txt')                     [read, write, close]
+m = color.red                               [set_background]
+
+#################################################################################
+Benefits
+--------
+- No longer possible to call the wrong function. If you call, it will give you error.
+- 
+
+#################################################################################
+Calls
+-----
+noun.verb(noun)
+a.mul(c)
+e.mul(e.tr)
+f.msize()
+'hello'.upper()
+
+Problems
+--------
+1) Repeat the same list of functions over and over again
+- Above you see some functions are repeated multiple times. And this situation eats memory!
+- Every piece of data has a very long list of functions
+- Because of redundancy it eats memory like a crazy :)
+2) No meaningful name for each group
+- As you see above(in Functions section) there is no name group of functions. 
+
+
+
+
+

@@ -1,0 +1,53 @@
+Classes with Inheritance and Polymorphism
+=========================================
+Polymorphism; we use the same name for different functions and different classes
+
+
+Data                                        Classes
+-----                                       ----------
+a = 5                                       scalar
+b = [10,20,30]                              vector3
+c = 6                                       scalar
+d = [5,-10,7]                               vector3
+e = [[1,2],                                 matrix
+    [3,4],                                 
+    [5,6]]                                 
+f = [[1,4,6]                                smatrix
+    [6,4,1],                               
+    [3,2,3]]                               
+g = 'hello'                                 str
+h = [10,-5]                                 vector
+i = 'goodbye'                               str
+
+
+Name(Parent)        Functions
+------------        ------------------------
+scalar              [mul, abs]
+vector              [dot, len]
+vector3             [vector, cross]
+matrix              [len, mmul]
+smatrix             [matrix, minv, eigs]
+str                 [len, upper]
+unicode             [len, upper]
+file                [read, write, close]
+url                 [read]
+tuple               [len]
+
+
+Calls
+-----
+g.len() # gives string size
+h.len() # gives vector size 
+f.len() # gives matrix size
+a.mul(c)
+f.mul(e)
+
+for obj in [mat1, vec1, mat2, str3, uni4, tuple5, bytearray1, set1]:
+    print obj.len()
+
+
+
+
+
+
+

@@ -1,0 +1,66 @@
+Classes with Inheritance
+========================
+
+
+Data                                        Classes
+-----                                       ----------
+a = 5                                       scalar
+b = [10,20,30]                              vector3
+c = 6                                       scalar
+d = [5,-10,7]                               vector3
+e = [[1,2],                                 matrix
+    [3,4],                                 
+    [5,6]]                                 
+f = [[1,4,6]                                smatrix
+    [6,4,1],                               
+    [3,2,3]]                               
+g = 'hello'                                 str
+h = [10,-5]                                 vector
+i = 'goodbye'                               str
+
+
+Name(Parent)        Functions
+------------        ------------------------
+scalar              [mul, abs]
+vector              [dot, vlen]
+vector3(vector)     [cross]
+matrix              [msize, mmul]
+smatrix(matrix)     [minv, eigs]
+str                 [strlen, upper]
+unicode             [unistrlen, uniupper]
+file                [read, write, close]
+url                 [urlread]
+
+#################################################################################
+Benefits
+--------
+- Far less redundancy
+
+#################################################################################
+Calls
+-----
+g.strlen() # gives string size
+d.vlen() # gives vector size 
+f.msize() # gives matrix size
+
+Problems
+--------
+1) Too many names for the same concept
+2) Bigger problem: Client code needs case statements to cover each variant
+    for x in [mat1, vec1, mat2, str3]:
+        if kind(x) == Str:
+            print strlen(x)
+        elif kind(x) == Matrix:
+            print msize(x)
+        elif kind(x) == Vector:
+            print vlen(x)
+        elif kind(x) == Mapping:
+            print mapping_size(x)
+        elif kind(x) == ByteArray:
+            print byte_size(x)
+        else:
+            error('Unknown kind')
+
+
+
+

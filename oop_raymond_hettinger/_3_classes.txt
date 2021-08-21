@@ -1,0 +1,57 @@
+Classes
+=======
+After the invention of objects the next important thing was a class
+You can have objects without classes.
+Function groups are created once and are referred to by name
+
+Data                                        Classes
+-----                                       ----------
+a = 5                                       scalar
+b = [10,20,30]                              vector3
+c = 6                                       scalar
+d = [5,-10,7]                               vector3
+e = [[1,2],                                 matrix
+    [3,4],                                 
+    [5,6]]                                 
+f = [[1,4,6]                                smatrix
+    [6,4,1],                               
+    [3,2,3]]                               
+g = 'hello'                                 str
+h = [10,-5]                                 vector
+i = 'goodbye'                               str
+j = open('myfile.txt')                      file
+k = u'howdoyoudo'                           unicode
+l = urlopen('http://www.python.org')        url
+k = open('subfile.txt')                     file
+
+
+Name                Functions
+----                ------------------------
+scalar              [mul, abs]
+vector              [dot, vlen]
+vector3             [dot, vlen, cross]
+matrix              [msize, mmul]
+smatrix             [msize, mmul, minv, eigs]
+str                 [strlen, upper]
+unicode             [unistrlen, uniupper]
+file                [read, write, close]
+url                 [urlread]
+
+#################################################################################
+Benefits
+--------
+- Takes a lot less memory
+- We have group names
+
+#################################################################################
+
+
+Problems
+--------
+1) Some functions subgroups are repeated
+2) No relationships between the classes
+
+
+
+
+
