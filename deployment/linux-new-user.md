@@ -7,7 +7,7 @@
 ## Generating SSH KEY for the user
 
 ```bash
-ssh-keygen -t rsa -b 4096 -C "adnankayace@gmail.com"
+ssh-keygen -t rsa -b 4096 -C "adnankayace@example.com"
 
 ```
 - Copy .pub ssh key to the github ssh keys to access github repo
